@@ -8,13 +8,10 @@ import frc.robot.Constants;
 
 public class DriveSubsystem extends Subsystem {
 
-    private static final TalonSRX leftMaster = new TalonSRX(Constants.kLeftMasterId);
-    private static final TalonSRX leftSlave = new TalonSRX(Constants.kLeftSlaveId);
-    private static final TalonSRX rightMaster = new TalonSRX(Constants.kRightMasterId);
-    private static final TalonSRX rightSlave = new TalonSRX(Constants.kRightSlaveId);
-
-
-    
+    private final TalonSRX leftMaster = new TalonSRX(Constants.kLeftMasterId);
+    private final TalonSRX leftSlave = new TalonSRX(Constants.kLeftSlaveId);
+    private final TalonSRX rightMaster = new TalonSRX(Constants.kRightMasterId);
+    private final TalonSRX rightSlave = new TalonSRX(Constants.kRightSlaveId);
 
 
     public DriveSubsystem() {
